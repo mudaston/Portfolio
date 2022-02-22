@@ -1,0 +1,53 @@
+@import "base/variables";
+@import "base/mixins";
+@import "blocks/about";
+@import "blocks/button";
+@import "blocks/link";
+@import "blocks/social-links";
+
+.promo {
+  position: relative;
+
+  min-height: 100vh;
+
+  padding: min(25vh, 205px) min(3.5vw, 1.875rem) 0;
+
+  background: #353535 url("../img/promo-bg.jpg") 55% center / cover no-repeat;
+
+  // .promo__about
+  &__about {
+    color: $text-color-reverse;
+  }
+
+  // .promo__title
+  &__title {
+    position: relative;
+    padding-left: 10px;
+
+    @include before-circle;
+  }
+
+  // .promo__subtitle
+  &__subtitle {
+    max-width: 660px;
+
+    font-size: 3rem;
+  }
+
+  // .promo__btns
+  &__btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: .875rem;
+
+    margin-top: 2.14em;
+
+    max-width: 15.625rem;
+  }
+
+  // .promo__btn
+  &__btn {
+  }
+}

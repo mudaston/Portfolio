@@ -1,0 +1,47 @@
+@import "variables";
+@import "mixins";
+
+@media (min-width: 576.98px) {
+  .promo {
+    &__title {
+      @include before-circle {
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+
+@media (min-width: 1400.98px) {
+  .social {
+    display: flex;
+  }
+}
+
+@media (max-width: 768.98px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576.98px) {
+  .promo {
+    &__about {
+      text-align: center;
+    }
+
+    &__title {
+      @include before-circle {
+        top: 50%;
+        left: calc(50% - 100px);
+        transform: translateY(-50%);
+      }
+    }
+
+    &__btns {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

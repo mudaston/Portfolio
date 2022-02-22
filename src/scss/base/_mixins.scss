@@ -1,0 +1,19 @@
+@import "variables";
+
+@mixin before-circle {
+  &:before {
+    content: "";
+    display: block;
+    border-radius: 50%;
+
+    position: absolute;
+    z-index: -1;
+
+    width: 36px;
+    height: 36px;
+
+    background-color: $main-color;
+
+    @content;
+  }
+}

@@ -1,0 +1,76 @@
+@import "../base/variables";
+
+.social {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 50%;
+  left: calc(13% - 175px);
+  transform: translateY(-50%);
+  z-index: 3;
+
+  height: 360px;
+
+  color: $text-color-reverse;
+  font-weight: 700;
+
+  // .social__text
+  &__text {
+    width: 25px;
+    height: 150px;
+
+    span {
+      display: block;
+      width: 150px;
+      height: 25px;
+
+      text-align: center;
+      font-size: 1rem;
+
+      transform: rotate(-90deg) translate(-42%, -63px);
+    }
+  }
+
+  // .social__divider
+  &__divider {
+    width: 2px;
+    height: 70px;
+    background-color: $background-color;
+  }
+
+  // .social__links
+  &__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+  }
+
+  // .social__link
+  &__link {
+    display: flex;
+
+    padding: 10px;
+
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: $text-color-reverse;
+
+    transform: rotate(-90deg);
+
+    transition: color .3s ease;
+
+    &:hover {
+      color: $main-color;
+    }
+  }
+}
