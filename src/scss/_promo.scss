@@ -10,7 +10,7 @@
 
   min-height: 100vh;
 
-  padding: min(25vh, 205px) min(3.5vw, 1.875rem) 0;
+  padding: min(25vh, 205px) 0 min(12vh, 100px);
 
   background: #353535 url("../img/promo-bg.jpg") 55% center / cover no-repeat;
 
@@ -24,7 +24,11 @@
     position: relative;
     padding-left: 10px;
 
-    @include before-circle;
+    @include before-circle {
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
   }
 
   // .promo__subtitle

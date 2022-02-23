@@ -7,6 +7,16 @@
   font-family: Poppins, sans-serif;
 }
 
+body {
+  background-color: $background-color-page;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
 @import "promo";
+@import "about";
 
 @import "base/media";

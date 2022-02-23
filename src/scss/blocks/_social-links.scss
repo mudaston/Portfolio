@@ -72,5 +72,9 @@
     &:hover {
       color: $main-color;
     }
+
+    span {
+      pointer-events: none;
+    }
   }
 }

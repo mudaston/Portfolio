@@ -1,7 +1,10 @@
+@import "../base/variables";
+
 .container {
   max-width: 1140px;
 
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .page {
@@ -11,4 +14,11 @@
   min-height: 100vh;
 
   overflow: hidden;
+}
+
+.divider {
+  width: 60px;
+  height: 3px;
+
+  background-color: $main-color;
 }
