@@ -1,0 +1,148 @@
+@import "base/variables";
+@import "base/mixins";
+
+.experience {
+  padding-top: 1.875rem;
+
+  color: $text-color-reverse;
+
+  // .experience__about
+  &__about {
+    position: relative;
+
+    text-align: center;
+
+    @include before-circle {
+      left: 50%;
+      transform: translateY(-20%) translateX(-50%);
+    }
+
+    .divider {
+      margin: 1.5rem auto 0;
+    }
+  }
+
+  // .experience__title
+  &__title {
+  }
+
+  // .experience__subtitle
+  &__subtitle {
+  }
+}
+
+.attainments {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+  gap: 3.75rem 8.75rem;
+
+  margin-top: 3.75rem;
+
+  // .attainments__col
+  &__col {
+    position: relative;
+
+    padding-left: 3.125rem;
+
+    border-left: 1px solid $background-color;
+
+    @include before-circle {
+      width: 15px;
+      height: 15px;
+
+      top: -15px;
+      left: 0;
+      transform: translateX(-50%);
+    }
+  }
+
+  // .attainments__header
+  &__header {
+    margin-top: -18px;
+    margin-bottom: 2.81rem;
+
+    font-weight: 700;
+    font-size: 1.25rem;
+  }
+
+  // .attainments__header
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2.81rem 0;
+  }
+}
+
+.attainments-item {
+  // .attainments-item__group
+  &__group {
+  }
+
+  // .attainments-item__wrapper
+  &__wrapper {
+    display: flex;
+    gap: 0 1.25rem;
+
+    position: relative;
+  }
+
+  // .attainments-item__icon
+  &__icon {
+    align-self: center;
+    position: relative;
+    z-index: 1;
+
+    font-size: 2rem;
+
+    padding-top: 15px;
+
+    &:after {
+      content: "";
+      display: block;
+
+      position: absolute;
+      top: 0;
+      left: -50%;
+      z-index: -1;
+
+      width: 2.8rem;
+      height: 2.8rem;
+
+      border-radius: 50%;
+      background-color: $main-color;
+    }
+  }
+
+  // .attainments-item__description
+  &__description {
+    position: relative;
+  }
+
+  // .attainments-item__header
+  &__header {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  // .attainments-item__subheader
+  &__subheader {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  // .attainments-item__text
+  &__text {
+    margin-top: 0.75rem;
+  }
+
+  // .attainments-item__line
+  &__line {
+    position: absolute;
+    top: 50%;
+    left: -6.09rem;
+
+    width: 20%;
+    height: 1px;
+    background-color: $background-color;
+  }
+}

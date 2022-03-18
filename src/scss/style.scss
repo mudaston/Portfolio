@@ -1,5 +1,6 @@
 @import "libs/bootstrap-reboot.min";
 @import "base/font";
+@import "base/icons-mode";
 @import "blocks/common";
 @import "blocks/menu";
 
@@ -18,5 +19,7 @@ p {
 
 @import "promo";
 @import "about";
+@import "experience";
+@import "technology";
 
 @import "base/media";

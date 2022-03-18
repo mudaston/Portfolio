@@ -5,11 +5,19 @@
   .social {
     display: flex;
   }
+
+  .technology {
+    padding-top: 8.125rem;
+  }
 }
 
 @media (max-width: 768.98px) {
   html {
     font-size: 14px;
+  }
+
+  .attainments {
+    grid-template-columns: auto;
   }
 }
 

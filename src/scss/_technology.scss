@@ -1,0 +1,40 @@
+@import "base/variables";
+@import "base/mixins";
+@import "blocks/technology-item";
+
+.technology {
+  padding-top: 5rem;
+  color: $text-color-reverse;
+
+  // .technology__about
+  &__about {
+    text-align: center;
+  }
+
+  // .technology__title
+  &__title {
+    @include before-circle {
+      top: -25%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  // .technology__subtitle
+  &__subtitle {
+  }
+
+  // .technology__divider
+  &__divider {
+    margin: 1.5rem auto 0;
+  }
+
+  // .technology__wrapper
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(16.875rem, auto));
+    gap: 0.625rem;
+
+    margin-top: 3.75rem;
+  }
+}
