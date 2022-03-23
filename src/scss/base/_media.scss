@@ -19,6 +19,30 @@
   .attainments {
     grid-template-columns: auto;
   }
+
+  .works {
+    &__wrapper {
+      grid-template-columns: repeat(auto-fit, 280px);
+      grid-template-rows: unset;
+      grid-auto-rows: 280px;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    &__plans {
+      grid-row: unset;
+    }
+
+    &__mac {
+      grid-column: unset;
+    }
+  }
+
+  .about {
+    &__wrapper {
+      gap: 2.8125rem;
+    }
+  }
 }
 
 @media (max-width: 992.8px) {
@@ -30,11 +54,29 @@
     }
 
     &__img {
-      max-height: 600px;
+      display: block;
+
+      max-height: 340px;
       max-width: 100%;
       width: auto;
 
       margin: 0 auto;
+    }
+  }
+
+  .progress {
+    padding-top: 6.25rem;
+  }
+
+  .works {
+    padding-top: 4rem;
+
+    &__wrapper {
+      margin-top: 2.5rem;
+    }
+
+    &__img {
+      filter: grayscale(0);
     }
   }
 }

@@ -2,28 +2,62 @@
 @import "../base/mixins";
 
 .progress-item {
-  // .progress-item__header
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 
+  // .progress-item__header
   &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   // .progress-item__name
 
   &__name {
+    position: relative;
+
+    padding-left: 15px;
+
+    font-size: 0.875rem;
+    font-weight: 700;
+
+    @include before-circle {
+      top: -65%;
+      left: 0;
+    }
   }
 
   // .progress-item__percent
 
   &__percent {
+    font-size: 0.875rem;
+    font-weight: 500;
   }
 
   // .progress-item__progress
 
   &__progress {
+    position: relative;
+
+    height: 0.9375rem;
+    width: 100%;
+
+    background-color: $background-color;
+    border-radius: 6px;
   }
 
   // .progress-item__fill
 
   &__fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+
+    background-color: $main-color;
+    border-radius: 4px;
   }
 }

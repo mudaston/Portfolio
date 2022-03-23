@@ -22,7 +22,7 @@
 
   // .about__descr
   &__descr {
-    color: $text-color-reverse;
+    color: $text-color;
   }
 
   // .about__title
@@ -45,7 +45,7 @@
     padding-top: 24px;
 
     font-weight: 500;
-    font-size: .875rem;
+    font-size: 0.875rem;
   }
 
   // .about__skills
@@ -58,7 +58,6 @@
   }
 
   &__about {
-
   }
 }
 

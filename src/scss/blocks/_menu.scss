@@ -33,7 +33,7 @@
       width: 80%;
       height: 2px;
 
-      background-color: $text-color-reverse;
+      background-color: $text-color;
     }
 
     .long {
@@ -52,7 +52,7 @@
 
     background-color: $main-color;
 
-    transition: left .3s ease;
+    transition: left 0.3s ease;
 
     &.active {
       left: 0;
@@ -72,7 +72,7 @@
     cursor: pointer;
 
     &:before {
-      content: '';
+      content: "";
       display: block;
       width: 100%;
       height: 2px;
@@ -87,7 +87,7 @@
     }
 
     &:after {
-      content: '';
+      content: "";
       display: block;
       width: 100%;
       height: 2px;
@@ -129,13 +129,13 @@
 
     font-weight: 500;
     font-size: 1.5rem;
-    color: $text-color-reverse;
+    color: $text-color;
     text-decoration: none;
 
-    transition: color .3s ease;
+    transition: color 0.3s ease;
 
     &:before {
-      content: '';
+      content: "";
       display: block;
       height: 15px;
       width: 15px;
@@ -148,11 +148,11 @@
       border: 1px solid $background-color;
       border-radius: 100%;
 
-      transition: background-color .3s ease, border .3s ease;
+      transition: background-color 0.3s ease, border 0.3s ease;
     }
 
     &:hover {
-      color: $text-color-reverse;
+      color: $text-color;
 
       &:before {
         background-color: $background-color;
@@ -176,12 +176,12 @@
     // .menu__social-link
     &-link {
       text-decoration: none;
-      color: $text-color-reverse;
+      color: $text-color;
 
-      transition: color .3s ease;
+      transition: color 0.3s ease;
 
       &:hover {
-        color: darken($text-color-reverse, 20);
+        color: darken($text-color, 20);
       }
     }
   }
@@ -199,10 +199,10 @@
     opacity: 0;
     cursor: pointer;
 
-    transition: opacity .5s ease, visibility .5s ease;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
 
     &.active {
-      opacity: .5;
+      opacity: 0.5;
       visibility: visible;
     }
   }

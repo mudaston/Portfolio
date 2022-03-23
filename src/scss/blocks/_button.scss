@@ -4,15 +4,15 @@
   position: relative;
   z-index: 1;
 
-  padding: .9375em 1.78em;
+  padding: 0.9375em 1.78em;
 
-  color: $text-color-reverse;
+  color: $text-color;
   text-decoration: none;
   font-weight: 700;
   background-color: $main-color;
-  box-shadow: 0 .285em .285em rgba(0, 0, 0, .15);
+  box-shadow: 0 0.285em 0.285em rgba(0, 0, 0, 0.15);
 
-  transition: color .3s ease;
+  transition: color 0.3s ease;
 
   overflow: hidden;
 
@@ -30,11 +30,11 @@
 
     background-color: darken($main-color, 5);
 
-    transition: top .2s ease;
+    transition: top 0.2s ease;
   }
 
   &:hover {
-    color: $text-color-reverse;
+    color: $text-color;
 
     &:after {
       top: 0;

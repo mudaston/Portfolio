@@ -1,0 +1,67 @@
+@import "base/variables";
+@import "base/mixins";
+
+.works {
+  padding-top: 7.5rem;
+
+  color: $text-color;
+
+  // .works__about
+  &__about {
+    text-align: center;
+  }
+
+  // .works__title
+  &__title {
+    @include before-circle {
+      left: 50%;
+      top: -25%;
+      transform: translateX(-50%);
+    }
+  }
+
+  // .works__subtitle
+  &__subtitle {
+  }
+
+  // .works__divider
+  &__divider {
+    margin: 1.5625rem auto 0;
+  }
+
+  // .works__wrapper
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+
+    margin-top: 3.75rem;
+  }
+
+  // .works__img
+  &__img {
+    transition: 0.3s ease;
+    filter: grayscale(70%);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
+
+  // .works__plans
+  &__plans {
+    grid-row: span 2;
+  }
+
+  // .works__mac
+  &__mac {
+    grid-column: span 2;
+  }
+}

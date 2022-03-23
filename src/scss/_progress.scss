@@ -1,0 +1,17 @@
+@import "base/variables";
+
+@import "blocks/progress-item";
+
+.progress {
+  padding-top: 8.125rem;
+
+  color: $text-color;
+
+  // .progress__wrapper
+  &__wrapper {
+    display: grid;
+    grid-auto-rows: minmax(3.75rem, auto);
+    grid-template-columns: repeat(auto-fit, minmax(18.125rem, auto));
+    gap: 2.5rem 2.8125rem;
+  }
+}

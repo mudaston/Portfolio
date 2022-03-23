@@ -14,7 +14,7 @@
 
   height: 360px;
 
-  color: $text-color-reverse;
+  color: $text-color;
   font-weight: 700;
 
   // .social__text
@@ -63,11 +63,11 @@
 
     text-decoration: none;
     font-size: 1.25rem;
-    color: $text-color-reverse;
+    color: $text-color;
 
     transform: rotate(-90deg);
 
-    transition: color .3s ease;
+    transition: color 0.3s ease;
 
     &:hover {
       color: $main-color;
