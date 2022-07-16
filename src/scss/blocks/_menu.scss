@@ -168,7 +168,7 @@
 
     position: absolute;
     left: 50%;
-    bottom: 50px;
+    bottom: 10%;
     transform: translateX(-50%);
 
     font-size: 1.25rem;
@@ -182,6 +182,10 @@
 
       &:hover {
         color: darken($text-color, 20);
+      }
+
+      span {
+        pointer-events: none;
       }
     }
   }

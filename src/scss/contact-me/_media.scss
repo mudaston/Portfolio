@@ -1,0 +1,10 @@
+@media (max-width: 992.8px) {
+  .contact-me {
+    padding-top: 4.5rem;
+
+    // .contact-me__person-photo
+    &__person-photo {
+      display: none;
+    }
+  }
+}

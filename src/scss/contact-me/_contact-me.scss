@@ -1,0 +1,100 @@
+@import "../blocks/contact-form-message/contact-form-message";
+
+@import "../base/variables";
+@import "../base/mixins";
+
+.contact-me {
+  padding-top: 7.5rem;
+  padding-bottom: 50px;
+
+  // .contact-me__wrapper
+  &__wrapper {
+    display: flex;
+    gap: 0 70px;
+  }
+
+  // .contact-me__person-photo
+  &__person-photo {
+    height: 600px;
+    object-fit: contain;
+  }
+
+  // .contact-me__right-side
+  &__right-side {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    width: 100%;
+
+    color: $text-color;
+  }
+
+  // .contact-me__about
+  &__about {
+  }
+
+  // .contact-me__title
+  &__title {
+    padding-left: 12px;
+
+    @include before-circle {
+      left: 18px;
+      top: -25%;
+      transform: translateX(-50%);
+    }
+  }
+
+  // .contact-me__subtitle
+  &__subtitle {
+  }
+
+  // .contact-me__divider
+  &__divider {
+    margin-top: 10px;
+  }
+
+  // .contact-me__by-your-choice
+  &__by-your-choice {
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  // .contact-me__social
+  &__socials {
+    display: flex;
+    gap: 20px;
+
+    font-size: 30px;
+  }
+
+  // .contact-me__social-link
+  &__social-link {
+    color: $text-color;
+    text-decoration: none;
+
+    transition: color .3s ease;
+
+    &:hover {
+      color: $main-color;
+    }
+  }
+
+  // .contact-me__myself
+  &__myself {
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  // .contact-me__from
+  &__from {
+    height: 100%;
+  }
+
+  // .contact-me__message
+  &__message {
+    //height: 100%;
+  }
+}
+
+@import "media";

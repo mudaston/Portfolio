@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
     menu.addEventListener('click', (e) => {
         const target = e.target
 
-        if (target && target.matches('.menu__link')) closeMenu()
+        if (target && target.matches('.menu__link') || target.matches('.menu__social-link')) closeMenu()
     })
 
 })

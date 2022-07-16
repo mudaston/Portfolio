@@ -1,0 +1,24 @@
+@media (max-width: 768.98px) {
+  .contact-form-message {
+
+    // .contact-form-message__name-and-email
+    &__name-and-email {
+      flex-direction: column;
+    }
+
+    // .contact-form-message__submit
+    &__submit {
+      margin: 28px auto 0;
+    }
+  }
+}
+
+@media (max-width: 992.8px) {
+  .contact-form-message {
+
+    // .contact-form-message__textarea
+    &__textarea {
+      height: 150px;
+    }
+  }
+}
