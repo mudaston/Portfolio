@@ -12,14 +12,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         menu.classList.add('active')
         overlap.classList.add('active')
-        document.body.style.overflow = 'hidden'
+        document.body.style.overflow     = 'hidden'
         document.body.style.paddingRight = `${paddingRight}px`
 
     }
 
     function scrollbarWidth() {
         const documentWidth = parseInt(document.documentElement.clientWidth);
-        const windowsWidth = parseInt(window.innerWidth);
+        const windowsWidth  = parseInt(window.innerWidth);
         return windowsWidth - documentWidth;
     }
 

@@ -1,0 +1,43 @@
+@import "../blocks/price-with-description";
+
+@import "../base/variables";
+@import "../base/mixins";
+
+.price-list {
+  padding-top: 4.125rem;
+
+  // .price-list__about
+  &__about {
+    text-align: center;
+  }
+
+  // .price-list__title
+  &__title {
+    @include before-circle {
+      left: 50%;
+      top: -25%;
+      transform: translateX(-50%);
+    }
+
+    color: $text-color;
+    text-align: center;
+  }
+
+  // .price-list__divider
+  &__divider {
+    margin: 1.875rem auto 0;
+  }
+
+
+  // .price-list__items-wrapper
+  &__items-wrapper {
+    display: grid;
+    grid-template-columns: 330px 330px;
+    justify-content: space-between;
+    gap: 15px;
+
+    margin-top: 3.75rem;
+  }
+}
+
+@import "media";

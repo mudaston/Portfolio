@@ -1,0 +1,9 @@
+@media (max-width: 768.98px) {
+  .price-list {
+
+    // .price-list__items-wrapper
+    &__items-wrapper {
+      grid-template-columns: minmax(100px, 1fr);
+    }
+  }
+}

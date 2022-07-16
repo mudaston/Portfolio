@@ -1,0 +1,56 @@
+@import "../base/variables";
+@import "../base/mixins";
+
+.price-with-description {
+  padding-left: 25px;
+
+  color: $text-color;
+
+  // .price-with-description__header
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 15px;
+  }
+
+  // .price-with-description__title
+  &__title {
+    position: relative;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    @include before-circle {
+      left: -25px;
+      top: 50%;
+      transform: translateY(-50%);
+
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  // .price-with-description__price
+  &__price {
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  // .price-with-description__footer
+  &__footer {
+    margin-top: 5px;
+  }
+
+  // .price-with-description__about-service
+  &__about-service {
+    width: 100%;
+
+    font-weight: 500;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    overflow: hidden;
+  }
+}
