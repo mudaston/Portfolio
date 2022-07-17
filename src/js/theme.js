@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 currentTheme = 'dark'
                 break;
             default:
-                currentTheme = 'dark'
+                currentTheme = `${darkMode ? 'dark' : 'light'}`
         }
 
         html.dataset.theme = currentTheme
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (savedLanguage)
         html.dataset.theme = savedLanguage
     else
-        html.dataset.theme = `${darkMode ? 'dark' : 'light'}`
+        changeTheme()
 
     changeButtonThemeIcon()
 })
