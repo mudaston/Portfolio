@@ -1,0 +1,33 @@
+:root {
+  --main-color-white-mode: #ffa501;
+  --main-color-white-mode-hover: #fabc46;
+  --main-color-black-mode: #296059;
+  --main-color-black-mode-hover: #1c433e;
+  --text-white-mode: #000;
+  --text-black-mode: #fff;
+  --text-white-mode-hover: #000;
+  --text-black-mode-hover: #a5a5a5;
+  --background-white-mode: #fff;
+  --background-black-mode: #292b34;
+  --placeholder-color-dark-mode: #7b7b7b;
+}
+
+:root[data-theme="dark"] {
+  --text-color: var(--text-black-mode);
+  --text-color-hover: var(--text-black-mode-hover);
+  --background-color: var(--background-white-mode);
+  --background-color-page: var(--background-black-mode);
+  --main-color: var(--main-color-black-mode);
+  --main-color-darken: var(--main-color-black-mode-hover);
+  --placeholder-color: var(--placeholder-color-dark-mode);
+}
+
+:root[data-theme="light"] {
+  --text-color: var(--text-white-mode);
+  --text-color-hover: var(--text-white-mode-hover);
+  --background-color: var(--background-black-mode);
+  --background-color-page: var(--background-white-mode);
+  --main-color: var(--main-color-white-mode);
+  --main-color-darken: var(--main-color-white-mode-hover);
+  --placeholder-color: var(--placeholder-color-dark-mode);
+}

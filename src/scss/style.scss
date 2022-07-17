@@ -1,3 +1,4 @@
+@import "base/theme";
 @import "libs/bootstrap-reboot.min";
 @import "base/font";
 @import "base/icons-mode";
@@ -9,7 +10,7 @@
 }
 
 body {
-  background-color: $background-color-page;
+  background-color: var(--background-color-page);
 }
 
 h1,

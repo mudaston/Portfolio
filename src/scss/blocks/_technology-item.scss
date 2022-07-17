@@ -1,9 +1,7 @@
-@import "../base/variables";
-
 .technology-item {
   padding: 1.875rem;
 
-  border: 1px solid $background-color;
+  border: 1px solid var(--background-color);
 
   // .technology-item__icon
   &__icon {

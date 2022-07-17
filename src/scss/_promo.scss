@@ -1,4 +1,3 @@
-@import "base/variables";
 @import "base/mixins";
 @import "blocks/about";
 @import "blocks/button";
@@ -12,11 +11,9 @@
 
   padding: min(25vh, 205px) 0 min(12vh, 100px);
 
-  background: #353535 url("../img/promo-bg.jpg") 55% center / cover no-repeat;
-
   // .promo__about
   &__about {
-    color: $text-color;
+    color: var(--text-color);
   }
 
   // .promo__title
@@ -55,3 +52,16 @@
   &__btn {
   }
 }
+
+:root[data-theme="dark"] {
+  .promo {
+    background: var(--background-color-page) url("../img/promo-bg.jpg") 55% center / cover no-repeat;
+  }
+}
+
+:root[data-theme="light"] {
+  .promo {
+    background: var(--background-color-page) url("../img/promo-bg-light.jpg") 55% center / cover no-repeat;
+  }
+}
+

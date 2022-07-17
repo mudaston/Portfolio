@@ -1,5 +1,3 @@
-@import "variables";
-
 @mixin before-circle {
   &:before {
     content: "";
@@ -12,7 +10,7 @@
     width: 2.25rem;
     height: 2.25rem;
 
-    background-color: $main-color;
+    background-color: var(--main-color);
 
     @content;
   }

@@ -1,10 +1,9 @@
-@import "base/variables";
 @import "base/mixins";
 
 .works {
   padding-top: 7.5rem;
 
-  color: $text-color;
+  color: var(--text-color);
 
   // .works__about
   &__about {

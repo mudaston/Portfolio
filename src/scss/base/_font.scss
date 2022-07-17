@@ -47,33 +47,39 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-designer:before {
+.icon-moon:before {
   content: "\e900";
 }
-.icon-courses:before {
+.icon-sun:before {
   content: "\e901";
 }
-.icon-developer:before {
+.icon-designer:before {
   content: "\e902";
 }
-.icon-university:before {
+.icon-courses:before {
   content: "\e903";
 }
-.icon-design:before {
+.icon-developer:before {
   content: "\e904";
 }
-.icon-mobile-dev:before {
+.icon-university:before {
   content: "\e905";
 }
-.icon-web-development:before {
+.icon-design:before {
   content: "\e906";
 }
-.icon-github:before {
+.icon-mobile-dev:before {
   content: "\e907";
 }
-.icon-instagram:before {
+.icon-web-development:before {
   content: "\e908";
 }
-.icon-facebook:before {
+.icon-github:before {
   content: "\e909";
+}
+.icon-instagram:before {
+  content: "\e90a";
+}
+.icon-facebook:before {
+  content: "\e90b";
 }

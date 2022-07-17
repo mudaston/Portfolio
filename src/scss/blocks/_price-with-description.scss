@@ -1,10 +1,9 @@
-@import "../base/variables";
 @import "../base/mixins";
 
 .price-with-description {
   padding-left: 25px;
 
-  color: $text-color;
+  color: var(--text-color);
 
   // .price-with-description__header
   &__header {

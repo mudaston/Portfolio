@@ -1,11 +1,9 @@
-@import "base/variables";
-
 @import "blocks/progress-item";
 
 .progress {
   padding-top: 8.125rem;
 
-  color: $text-color;
+  color: var(--text-color);
 
   // .progress__wrapper
   &__wrapper {

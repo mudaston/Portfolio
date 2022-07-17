@@ -1,10 +1,9 @@
-@import "base/variables";
 @import "base/mixins";
 @import "blocks/technology-item";
 
 .technology {
   padding-top: 5rem;
-  color: $text-color;
+  color: var(--text-color);
 
   // .technology__about
   &__about {
