@@ -2,7 +2,10 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     function closeMenu() {
-        menu.classList.remove('active')
+        setTimeout(() => {
+            menu.classList.remove('active')
+        }, 300)
+
         menuBlock.classList.remove('active')
         overlap.classList.remove('active')
         document.body.removeAttribute('style')
@@ -11,7 +14,9 @@ document.addEventListener('DOMContentLoaded', () => {
     function openMenu() {
         const paddingRight = scrollbarWidth()
 
-        menu.classList.add('active')
+        if (!menu.classList.contains('active'))
+            menu.classList.add('active')
+
         menuBlock.classList.add('active')
         overlap.classList.add('active')
         document.body.style.overflow     = 'hidden'
@@ -30,13 +35,13 @@ document.addEventListener('DOMContentLoaded', () => {
           menuBlock = document.querySelector('.menu__block'),
           menu      = document.querySelector('.menu')
 
-    burger.addEventListener('click', () => openMenu())
+    burger?.addEventListener('click', () => openMenu())
 
-    overlap.addEventListener('click', () => closeMenu())
+    overlap?.addEventListener('click', () => closeMenu())
 
-    closer.addEventListener('click', () => closeMenu())
+    closer?.addEventListener('click', () => closeMenu())
 
-    menuBlock.addEventListener('click', (e) => {
+    menuBlock?.addEventListener('click', (e) => {
         const target = e.target
 
         if (target && target.matches('.menu__link') || target.matches('.menu__social-link')) closeMenu()
