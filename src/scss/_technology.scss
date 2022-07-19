@@ -1,5 +1,6 @@
 @import "base/mixins";
-@import "blocks/technology-item";
+
+@import "../html/components/technology-item/style";
 
 .technology {
   padding-top: 5rem;
