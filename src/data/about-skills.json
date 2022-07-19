@@ -1,0 +1,17 @@
+[
+  {
+    "icon": "icon-web-development",
+    "title": "Web-разработка",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  {
+    "icon": "icon-mobile-dev",
+    "title": "Разработка приложений",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  {
+    "icon": "icon-design",
+    "title": "UI/UX Design",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  }
+]

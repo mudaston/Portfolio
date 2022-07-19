@@ -1,32 +1,11 @@
 @import "base/mixins";
 
+@import "../html/components/about-item/style";
+
 .works {
   padding-top: 7.5rem;
 
   color: var(--text-color);
-
-  // .works__about
-  &__about {
-    text-align: center;
-  }
-
-  // .works__title
-  &__title {
-    @include before-circle {
-      left: 50%;
-      top: -25%;
-      transform: translateX(-50%);
-    }
-  }
-
-  // .works__subtitle
-  &__subtitle {
-  }
-
-  // .works__divider
-  &__divider {
-    margin: 1.5625rem auto 0;
-  }
 
   // .works__wrapper
   &__wrapper {
@@ -62,5 +41,27 @@
   // .works__mac
   &__mac {
     grid-column: span 2;
+  }
+
+  .about-item {
+    text-align: center;
+
+    // .about-item__title
+    &__title {
+      @include before-circle {
+        left: 50%;
+        top: -25%;
+        transform: translateX(-50%);
+      }
+    }
+
+    // .about-item__subtitle
+    &__subtitle {
+    }
+
+    // .about-item__divider
+    &__divider {
+      margin: 1.5625rem auto 0;
+    }
   }
 }

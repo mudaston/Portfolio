@@ -5,29 +5,6 @@
   padding-top: 5rem;
   color: var(--text-color);
 
-  // .technology__about
-  &__about {
-    text-align: center;
-  }
-
-  // .technology__title
-  &__title {
-    @include before-circle {
-      top: -25%;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  }
-
-  // .technology__subtitle
-  &__subtitle {
-  }
-
-  // .technology__divider
-  &__divider {
-    margin: 1.5rem auto 0;
-  }
-
   // .technology__wrapper
   &__wrapper {
     display: grid;
@@ -35,5 +12,27 @@
     gap: 0.625rem;
 
     margin-top: 3.75rem;
+  }
+
+  .about-item {
+    text-align: center;
+
+    // .about-item__title
+    &__title {
+      @include before-circle {
+        top: -25%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    // .about-item__subtitle
+    &__subtitle {
+    }
+
+    // .about-item__divider
+    &__divider {
+      margin: 1.875rem auto 0;
+    }
   }
 }

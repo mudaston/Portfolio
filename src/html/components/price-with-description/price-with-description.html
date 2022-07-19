@@ -1,0 +1,14 @@
+<div class="price-with-description">
+    <header class="price-with-description__header">
+        <h4 class="price-with-description__title">@@title</h4>
+        @@if(context.price) {
+            <span class="price-with-description__price">от @@price руб.</span>
+        }
+        @@if(!context.price) {
+        <span class="price-with-description__price">Индивидуально</span>
+        }
+    </header>
+    <footer class="price-with-description__footer">
+        <p class="price-with-description__about-service">@@description</p>
+    </footer>
+</div>

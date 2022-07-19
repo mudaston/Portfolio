@@ -1,0 +1,33 @@
+<footer class="contact-me">
+    <div class="container">
+        <div class="contact-me__wrapper">
+            <img class="contact-me__person-photo" src="img/about-photo.jpg" alt="Девушка с кофе">
+            <div class="contact-me__right-side">
+                @@include('../components/about-item/about-item.html', {
+                    "title": "Контакты",
+                    "subtitle": "Свяжитесь со мной"
+                })
+                <span class="contact-me__by-your-choice">
+                        Любым удобным для вас способом:
+                </span>
+                <div class="contact-me__socials">
+                    <a href="#" class="contact-me__social-link">
+                        <span class="icon-facebook"></span>
+                    </a>
+                    <a href="#" class="contact-me__social-link">
+                        <span class="icon-github"></span>
+                    </a>
+                    <a href="#" class="contact-me__social-link">
+                        <span class="icon-instagram"></span>
+                    </a>
+                </div>
+                <span class="contact-me__myself">
+                        Или оставьте ваши данные и я сама вам напишу:
+                </span>
+                @@include('../components/contact-form-message/contact-form-message.html', {
+                    "action": "#"
+                })
+            </div>
+        </div>
+    </div>
+</footer>

@@ -3,10 +3,10 @@
 
     // .menu__block
     &__block {
-      width: clamp(575px,80vw,750px);
+      width: clamp(568px,80vw,750px);
 
       &.active {
-        width: clamp(575px,80vw,750px);
+        width: clamp(568px,80vw,750px);
       }
     }
 

@@ -1,4 +1,5 @@
 const gulp         = require('gulp')
+const fileinclude  = require('gulp-file-include')
 const browserSync  = require('browser-sync')
 const sass         = require('gulp-sass')(require('sass'))
 const rename       = require("gulp-rename")
@@ -26,24 +27,32 @@ gulp.task('styles', function () {
             suffix: ".min",
         }))
         .pipe(autoprefixer('last 2 versions'))
-        .pipe(cleanCSS({compatibility: 'ie8'}))
+        .pipe(cleanCSS({
+            compatibility: 'ie8', level: {
+                2: {}
+            }
+        }))
         .pipe(gulp.dest("dist/css"))
         .pipe(browserSync.stream())
 })
 
 gulp.task('watch', function () {
-    gulp.watch("src/scss/**/*.+(scss|sass)", gulp.parallel("styles"))
-    gulp.watch("src/**/*.html").on('change', gulp.parallel('html'))
-    gulp.watch("src/js/**/*.js").on('change', gulp.parallel('scripts'))
+    gulp.watch("src/**/*.+(scss|sass)", gulp.parallel("styles"))
+    gulp.watch(['src/**/*.html', 'src/**/*.json', 'src/js/**/*.js']).on('change', gulp.parallel(['html', 'scripts']))
     gulp.watch("src/fonts/**/*").on('all', gulp.parallel('fonts'))
     gulp.watch("src/icons/**/*").on('all', gulp.parallel('icons'))
     gulp.watch("src/img/**/*").on('all', gulp.parallel('images'))
 })
 
 gulp.task('html', function () {
-    return gulp.src("src/**/*.html")
+    return gulp.src(['src/index.html'])
+        .pipe(fileinclude({
+            prefix: '@@',
+            basepath: '@file'
+        }))
         .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest("dist/"))
+        .pipe(browserSync.stream())
 })
 
 gulp.task('scripts', function () {
@@ -71,5 +80,14 @@ gulp.task('images', function () {
         .pipe(browserSync.stream())
 })
 
-gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'scripts', 'fonts', 'icons', 'html', 'images'))
+gulp.task('default', gulp.parallel(
+    'watch',
+    'server',
+    'styles',
+    'scripts',
+    'fonts',
+    'icons',
+    'html',
+    'images'
+))
 

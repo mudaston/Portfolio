@@ -1,12 +1,13 @@
 @import "base/mixins";
+@import "../html/components/attainments-item/style";
+@import "../html/components/about-item/style";
 
 .experience {
   padding-top: 1.875rem;
 
   color: var(--text-color);
 
-  // .experience__about
-  &__about {
+  .about-item {
     position: relative;
 
     text-align: center;
@@ -16,17 +17,17 @@
       transform: translateY(-20%) translateX(-50%);
     }
 
-    .divider {
-      margin: 1.5rem auto 0;
+    // .about-item__title
+    &__title {
+    }
+
+    // .about-item__subtitle
+    &__subtitle {
     }
   }
 
-  // .experience__title
-  &__title {
-  }
-
-  // .experience__subtitle
-  &__subtitle {
+  .divider {
+    margin: 1.5rem auto 0;
   }
 }
 
@@ -42,24 +43,43 @@
     position: relative;
 
     padding-left: 3.125rem;
+    //border-left: 1px solid var(--background-color);
 
-    border-left: 1px solid var(--background-color);
+    overflow: hidden;
 
     @include before-circle {
       width: 15px;
       height: 15px;
 
-      top: -15px;
-      left: 0;
+      top: 3px;
+      left: 8px;
+      transform: translateX(-50%);
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: 8px;
+      z-index: -2;
+
+      display: block;
+      width: 1px;
+      height: 100%;
+
+      background-color: var(--background-color);
+
       transform: translateX(-50%);
     }
   }
 
   // .attainments__header
   &__header {
-    margin-top: -18px;
+    //margin-top: -18px;
     margin-bottom: 2.81rem;
+    margin-left: -13px;
 
+    text-align: left;
     font-weight: 700;
     font-size: 1.25rem;
   }
@@ -69,79 +89,5 @@
     display: flex;
     flex-direction: column;
     gap: 2.81rem 0;
-  }
-}
-
-.attainments-item {
-  // .attainments-item__group
-  &__group {
-  }
-
-  // .attainments-item__wrapper
-  &__wrapper {
-    display: flex;
-    gap: 0 1.25rem;
-
-    position: relative;
-  }
-
-  // .attainments-item__icon
-  &__icon {
-    align-self: center;
-    position: relative;
-    z-index: 1;
-
-    font-size: 2rem;
-
-    padding-top: 15px;
-
-    &:after {
-      content: "";
-      display: block;
-
-      position: absolute;
-      top: 0;
-      left: -50%;
-      z-index: -1;
-
-      width: 2.8rem;
-      height: 2.8rem;
-
-      border-radius: 50%;
-      background-color: var(--main-color);
-    }
-  }
-
-  // .attainments-item__description
-  &__description {
-    position: relative;
-  }
-
-  // .attainments-item__header
-  &__header {
-    font-size: 14px;
-    font-weight: 700;
-  }
-
-  // .attainments-item__subheader
-  &__subheader {
-    font-size: 12px;
-    font-weight: 500;
-  }
-
-  // .attainments-item__text
-  &__text {
-    margin-top: 0.75rem;
-  }
-
-  // .attainments-item__line
-  &__line {
-    position: absolute;
-    top: 50%;
-    left: -6.09rem;
-
-    width: 20%;
-    height: 1px;
-    background-color: var(--background-color);
   }
 }

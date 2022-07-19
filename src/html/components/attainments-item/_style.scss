@@ -1,0 +1,83 @@
+.attainments-item {
+  text-align: left;
+
+  // .attainments-item__group
+  &__group {
+  }
+
+  // .attainments-item__wrapper
+  &__wrapper {
+    display: flex;
+    gap: 0 1.25rem;
+
+    position: relative;
+  }
+
+  // .attainments-item__icon
+  &__icon {
+    align-self: center;
+    position: relative;
+    z-index: 1;
+
+    width: 32px;
+
+    padding-top: 15px;
+
+    font-size: 2rem;
+
+    &:after {
+      content: "";
+      display: block;
+
+      position: absolute;
+      top: 0;
+      left: -50%;
+      z-index: -1;
+
+      width: 2.8rem;
+      height: 2.8rem;
+
+      border-radius: 50%;
+      background-color: var(--main-color);
+    }
+  }
+
+  // .attainments-item__description
+  &__description {
+    position: relative;
+  }
+
+  // .attainments-item__header
+  &__header {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  // .attainments-item__subheader
+  &__subheader {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  // .attainments-item__text
+  &__text {
+    margin-top: 0.75rem;
+    margin-left: -13px;
+
+    font-weight: 500;
+    font-size: 12px;
+  }
+
+  // .attainments-item__line
+  &__line {
+    position: absolute;
+    top: 50%;
+    left: -94px;
+
+    width: 30%;
+    height: 1px;
+    background-color: var(--background-color);
+  }
+}
+
+@import "media";

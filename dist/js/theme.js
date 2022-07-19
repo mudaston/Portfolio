@@ -44,11 +44,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const changeButtonThemeIcon = () => {
         html.dataset.theme === 'dark' ?
-            changeThemeButton.classList.remove('icon-sun') :
-            changeThemeButton.classList.add('icon-sun')
+            changeThemeButton?.classList.remove('icon-sun') :
+            changeThemeButton?.classList.add('icon-sun')
     }
 
-    changeThemeButton.addEventListener('click', () => {
+    changeThemeButton?.addEventListener('click', () => {
         changeTheme()
         changeButtonThemeIcon()
     })

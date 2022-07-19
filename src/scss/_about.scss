@@ -1,5 +1,8 @@
 @import "base/mixins";
 
+@import "../html/components/about-item/style";
+@import "../html/components/skill-item/style";
+
 .about {
   min-height: 600px;
 
@@ -24,22 +27,6 @@
     color: var(--text-color);
   }
 
-  // .about__title
-  &__title {
-    position: relative;
-    padding: 6px 0 0 12px;
-
-    @include before-circle {
-      top: 50%;
-      left: 0;
-      transform: translateY(calc(-50% + 2px));
-    }
-  }
-
-  // .about__subtitle
-  &__subtitle {
-  }
-
   &__about-me {
     padding-top: 24px;
 
@@ -56,53 +43,26 @@
     margin-top: 2.5rem;
   }
 
-  &__about {
-  }
-}
+  .about-item {
+    // .about-item__title
+    &__title {
+      position: relative;
+      padding: 6px 0 0 12px;
 
-.skill-item {
-  display: flex;
-  justify-content: space-between;
-  gap: 1.25rem;
-
-  // .skill-item__wrapper
-  &__wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 10px 0;
-  }
-
-  // .skill-item__icon
-  &__icon {
-    position: relative;
-
-    margin: 15px 0 0 15px;
-
-    width: 100%;
-    max-width: 30px;
-
-    font-size: 1.5625rem;
-    font-weight: 100;
-
-    @include before-circle {
-      top: -10px;
-      left: -15px;
+      @include before-circle {
+        top: 50%;
+        left: 0;
+        transform: translateY(calc(-50% + 2px));
+      }
     }
-  }
 
-  // .skill-item__title
-  &__title {
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 1.2px;
-  }
+    // .about-item__subtitle
+    &__subtitle {
+    }
 
-  // .skill-item__descr
-  &__descr {
-    font-weight: 500;
-    font-size: 14px;
-
-    //padding-top: .625rem;
+    // .about-item__divider
+    &__divider {
+      margin-top: 10px;
+    }
   }
 }

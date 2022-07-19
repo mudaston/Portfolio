@@ -1,9 +1,9 @@
 @import "base/theme";
 @import "libs/bootstrap-reboot.min";
 @import "base/font";
-@import "base/icons-mode";
 @import "blocks/common";
-@import "blocks/menu/menu";
+@import "../html/components/menu/style";
+@import "../html/components/aside-social-links/style";
 
 * {
   font-family: Poppins, sans-serif;
@@ -31,6 +31,6 @@ p {
 @import "progress";
 @import "works";
 @import "price-list/price-list";
-@import "contact-me/contact-me";
+@import "../html/footer/style";
 
 @import "media-queries/media";

@@ -1,0 +1,29 @@
+<form action="@@action" class="contact-form-message contact-me__from">
+    <div class="contact-form-message__name-and-email">
+        <fieldset class="contact-form-message__fieldset">
+            <legend class="contact-form-message__legend">
+                <label class="contact-form-message__label" for="username">Ваше имя</label>
+            </legend>
+            <input id="username" class="contact-form-message__input" type="text"
+                   placeholder="Mudaston">
+        </fieldset>
+        <fieldset class="contact-form-message__fieldset">
+            <legend class="contact-form-message__legend">
+                <label class="contact-form-message__label" for="email">Ваша почта</label>
+            </legend>
+            <input id="email" class="contact-form-message__input" type="text"
+                   placeholder="mudaston@gmail.com">
+        </fieldset>
+    </div>
+    <fieldset class="contact-form-message__fieldset contact-form-message__message contact-me__message">
+        <legend class="contact-form-message__legend">
+            <label class="contact-form-message__label" for="message">Ваше сообщение</label>
+        </legend>
+        <textarea id="message" class="contact-form-message__input contact-form-message__textarea"
+                  type="text"></textarea>
+    </fieldset>
+    @@include('../button/button.html', {
+        "type": "type='submit'",
+        "text": "Отправить сообщение"
+    })
+</form>

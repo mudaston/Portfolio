@@ -1,8 +1,8 @@
 @import "base/mixins";
-@import "blocks/about";
-@import "blocks/button";
 @import "blocks/link";
-@import "blocks/social-links";
+
+@import "../html/components/button-link/style";
+@import "../html/components/about-item/style";
 
 .promo {
   position: relative;
@@ -10,6 +10,24 @@
   min-height: 100vh;
 
   padding: min(25vh, 205px) 0 min(12vh, 100px);
+
+  // .promo__btns
+  &__btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 0.875rem;
+
+    margin-top: 2.14em;
+
+    max-width: 16.25rem;
+  }
+
+  // .promo__btn
+  &__btn {
+    padding: .9375em 1.78em;
+  }
 
   // .promo__about
   &__about {
@@ -35,21 +53,32 @@
     font-size: 3rem;
   }
 
-  // .promo__btns
-  &__btns {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .about-item {
+    color: var(--text-color);
 
-    font-size: 0.875rem;
+    // .about-item__title
+    &__title {
+      position: relative;
+      padding-left: 10px;
 
-    margin-top: 2.14em;
+      @include before-circle {
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+      }
+    }
 
-    max-width: 15.625rem;
-  }
+    // .about-item__subtitle
+    &__subtitle {
+      max-width: 660px;
 
-  // .promo__btn
-  &__btn {
+      font-size: 3rem;
+    }
+
+    // .about-item__divider
+    &__divider {
+      display: none;
+    }
   }
 }
 
