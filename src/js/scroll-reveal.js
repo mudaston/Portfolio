@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     sr.reveal('.promo .container', {origin: 'right'})
     sr.reveal('.social', {origin: 'left'})
-    
+
     sr.reveal('.about .about__container')
     sr.reveal('.about .about__skills', {origin: 'right'})
 

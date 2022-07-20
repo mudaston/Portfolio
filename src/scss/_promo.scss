@@ -11,6 +11,10 @@
 
   padding: min(25vh, 205px) 0 min(12vh, 100px);
 
+  background-position: 55% center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
   // .promo__btns
   &__btns {
     display: flex;
@@ -84,13 +88,13 @@
 
 :root[data-theme="dark"] {
   .promo {
-    background: var(--background-color-page) url("../img/promo-bg.jpg") 55% center / cover no-repeat;
+    background-image: url("../img/promo-bg.jpg");
   }
 }
 
 :root[data-theme="light"] {
   .promo {
-    background: var(--background-color-page) url("../img/promo-bg-light.jpg") 55% center / cover no-repeat;
+    background-image: url("../img/promo-bg-light.jpg");
   }
 }
 
