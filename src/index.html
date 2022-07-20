@@ -24,15 +24,15 @@
             })
             <div class="promo__btns">
                 @@include('html/components/button-link/button-link.html', {
-                    "link": "#",
+                    "link": "#works",
                     "text": "Портфолио"
                 })
-                <a href="#" class="promo__btn link">Про меня</a>
+                <a href="#about" class="promo__btn link">Про меня</a>
             </div>
         </div>
     </section>
 
-    <section class="about">
+    <section id="about" class="about">
         <div class="container about__container">
             <div class="about__wrapper">
                 <picture>
@@ -64,7 +64,7 @@
         </div>
     </section>
 
-    <section class="experience">
+    <section id="experience" class="experience">
         <div class="container">
             @@include('html/components/about-item/about-item.html', {
                 "title": "Опыт",
@@ -109,7 +109,7 @@
         </div>
     </section>
 
-    <section class="technology">
+    <section id="technology" class="technology">
         <div class="container">
             @@include('html/components/about-item/about-item.html', {
                 "title": "Навыки",
@@ -129,7 +129,7 @@
         </div>
     </section>
 
-    <section class="works">
+    <section id="works" class="works">
         <div class="container">
             <div class="about-item">
                 @@include('html/components/about-item/about-item.html', {
@@ -161,7 +161,7 @@
         </div>
     </section>
 
-    <section class="price-list">
+    <section id="price-list" class="price-list">
         <div class="container">
             @@include('html/components/about-item/about-item.html', {
                 "title": "Прайс-лист"
