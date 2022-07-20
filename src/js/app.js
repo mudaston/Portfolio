@@ -1,5 +1,11 @@
 'use strict'
 
+function scrollbarWidth() {
+    const documentWidth = parseInt(document.documentElement.clientWidth);
+    const windowsWidth  = parseInt(window.innerWidth);
+    return windowsWidth - documentWidth;
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     function closeMenu() {
         setTimeout(() => {
@@ -21,12 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
         overlap.classList.add('active')
         document.body.style.overflow     = 'hidden'
         document.body.style.paddingRight = `${paddingRight}px`
-    }
-
-    function scrollbarWidth() {
-        const documentWidth = parseInt(document.documentElement.clientWidth);
-        const windowsWidth  = parseInt(window.innerWidth);
-        return windowsWidth - documentWidth;
     }
 
     const closer    = document.querySelector('.menu__close'),

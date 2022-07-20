@@ -45,24 +45,6 @@
 }
 
 @media (max-width: 992.8px) {
-  .about {
-    padding: min(120px, 5vh) 0;
-
-    &__wrapper {
-      grid-template-columns: 1fr;
-    }
-
-    &__img {
-      display: block;
-
-      max-height: 340px;
-      max-width: 100%;
-      width: auto;
-
-      margin: 0 auto;
-    }
-  }
-
   .progress {
     padding-top: 6.25rem;
   }

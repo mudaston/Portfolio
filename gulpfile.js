@@ -7,6 +7,7 @@ const autoprefixer = require('gulp-autoprefixer')
 const cleanCSS     = require('gulp-clean-css')
 const htmlmin      = require('gulp-htmlmin')
 const imagemin     = require('gulp-imagemin')
+const uglify       = require('gulp-uglify-es').default
 
 gulp.task('server', function () {
     browserSync.init({
@@ -57,6 +58,7 @@ gulp.task('html', function () {
 
 gulp.task('scripts', function () {
     return gulp.src("src/js/**/*.js")
+        .pipe(uglify())
         .pipe(gulp.dest("dist/js"))
         .pipe(browserSync.stream())
 })

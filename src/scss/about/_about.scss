@@ -1,7 +1,7 @@
-@import "base/mixins";
+@import "../base/mixins";
 
-@import "../html/components/about-item/style";
-@import "../html/components/skill-item/style";
+@import "../../html/components/about-item/style";
+@import "../../html/components/skill-item/style";
 
 .about {
   min-height: 600px;
@@ -66,3 +66,5 @@
     }
   }
 }
+
+@import "media";
