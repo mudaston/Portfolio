@@ -35,7 +35,7 @@
 
 </p>
 
-This site is like a portfolio.
+This site is for practice only, this is not my real portfolio.
 
 <br/>
 
